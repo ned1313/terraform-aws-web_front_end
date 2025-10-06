@@ -62,10 +62,10 @@ resource "aws_launch_template" "front_end" {
 
   tag_specifications {
     resource_type = "instance"
-    tags = {
+    tags = merge({
       Name        = "${var.prefix}-${var.environment}-ec2-instance"
       Environment = var.environment
-    }
+    }, var.instance_tags)
   }
 }
 

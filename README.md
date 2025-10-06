@@ -36,6 +36,7 @@ No modules.
 | <a name="input_autoscale_group_min_max"></a> [autoscale\_group\_min\_max](#input\_autoscale\_group\_min\_max) | The minimum and maximum size for the autoscale group. | <pre>object({<br>    min = number<br>    max = number<br>  })</pre> | n/a | yes |
 | <a name="input_autoscale_group_size"></a> [autoscale\_group\_size](#input\_autoscale\_group\_size) | Default size of autoscale group. | `number` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | (Required) Environment of all resources | `string` | n/a | yes |
+| <a name="input_instance_tags"></a> [instance\_tags](#input\_instance\_tags) | Additional tags for the launch template instances | `map(string)` | `{}` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type for Autoscale group | `string` | `"t3.micro"` | no |
 | <a name="input_launch_template_ami"></a> [launch\_template\_ami](#input\_launch\_template\_ami) | AMI ID to use for the launch template | `string` | n/a | yes |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | (Required) Prefix to use for all resources in this module. | `string` | n/a | yes |

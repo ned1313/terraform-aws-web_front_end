@@ -23,6 +23,12 @@ variable "environment" {
   description = "(Required) Environment of all resources"
 }
 
+variable "instance_tags" {
+  type = map(string)
+  description = "Additional tags for the launch template instances"
+  default = {}
+}
+
 variable "instance_type" {
   type        = string
   description = "Instance type for Autoscale group"
